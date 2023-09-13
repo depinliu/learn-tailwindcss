@@ -1282,4 +1282,16 @@ body {
   .xl\:pt-36 {
     padding-top: 9rem;
   }
+
+  .xl\:pt-28 {
+    padding-top: 7rem;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 3rem;
+  }
 }
