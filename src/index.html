@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Tailwind CSS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >DevinLiu</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Klien</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-28 xl:pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo Semua 👏, saya
+              <span class="block font-bold text-dark text-4xl lg:text-5xl"
+                >Devin</span
+              >
+            </h1>
+            <h2 class="font-medium text-dark text-lg mb-5">
+              Application Engineer
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              Belajar web programming itu mudah dan menyenangkan
+              <span class="text-dark font-bold">bukan!</span>
+            </p>
+
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Hubungi Saya</a
+            >
+          </div>
+
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img
+                src="../dist/img/photo.png"
+                alt="devin"
+                class="max-w-full mx-auto grayscale"
+              />
+              <span
+                class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 sm:scale-150 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#14B8A6"
+                    d="M36.4,-56.2C48.2,-49,59.6,-40.7,65.7,-29.4C71.7,-18.1,72.4,-3.8,71.3,10.9C70.3,25.7,67.5,40.9,58.5,50.1C49.6,59.4,34.5,62.8,20.5,64.6C6.4,66.5,-6.7,66.8,-20.8,65.2C-34.8,63.5,-50,60,-62.8,51.1C-75.6,42.2,-86,28.1,-87.7,12.9C-89.5,-2.3,-82.6,-18.4,-72.5,-30.1C-62.5,-41.9,-49.4,-49.2,-36.8,-56C-24.2,-62.9,-12.1,-69.3,0.1,-69.4C12.3,-69.5,24.5,-63.4,36.4,-56.2Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Sectiond End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              Tentang Saya
+            </h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+              Yuk, belajar web programming di Lonsum
+            </h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              ullam blanditiis repellat accusantium cum! Quae in, blanditiis
+              quod tenetur, modi sunt natus laborum, officia beatae rerum nobis!
+              Distinctio, eligendi deleniti.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
+            >
+              Mari bertemen
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              expedita vitae unde, quisquam minima cum deserunt accusamus
+              tempore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary uppercase mb-2">
+              Portfolio
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Project Terbaru
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Assumenda tempora facilis facere error excepturi harum ipsum omnis
+              nostrum quae saepe?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?project"
+                alt="Project Image"
+                class="w-full"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5">Climbing</h3>
+            <p class="font-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              quis laborum iure tenetur iusto voluptate?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?project"
+                alt="Project Image"
+                class="w-full"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5">Climbing</h3>
+            <p class="font-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              quis laborum iure tenetur iusto voluptate?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?project"
+                alt="Project Image"
+                class="w-full"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5">Climbing</h3>
+            <p class="font-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              quis laborum iure tenetur iusto voluptate?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="https://source.unsplash.com/360x200?project"
+                alt="Project Image"
+                class="w-full"
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5">Climbing</h3>
+            <p class="font-medium text-base text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              quis laborum iure tenetur iusto voluptate?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-700">
+      <div class="container">
+        <div class="mx-auto text-center mb-16">
+          <h4 class="font-semibold text-lg text-primary uppercase mb-2">
+            Klien
+          </h4>
+          <h2
+            class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+          >
+            Yang Pernah Bekerjasama
+          </h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+            tempora facilis facere error excepturi harum ipsum omnis nostrum
+            quae saepe?
+          </p>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="#">
+              <img
+                src="../dist/img/google.png"
+                alt="Google"
+                class="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../dist/img/google.png"
+                alt="Google"
+                class="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../dist/img/google.png"
+                alt="Google"
+                class="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../dist/img/google.png"
+                alt="Google"
+                class="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary uppercase mb-2">
+              Blog
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Tulisan Terkini
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              officiis voluptates fuga delectus!
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Project Image"
+                class="w-full"
+              />
+              <div class="px-8 py-6">
+                <h3 class="font-semibold text-xl text-dark mt-5">
+                  <a
+                    href="#"
+                    class="inline mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                  >
+                    Tips Belajar Programming
+                  </a>
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis quis laborum iure tenetur iusto voluptate?
+                </p>
+                <a
+                  href="#"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Project Image"
+                class="w-full"
+              />
+              <div class="px-8 py-6">
+                <h3 class="font-semibold text-xl text-dark mt-5">
+                  <a
+                    href="#"
+                    class="inline mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                  >
+                    Tips Belajar Programming
+                  </a>
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis quis laborum iure tenetur iusto voluptate?
+                </p>
+                <a
+                  href="#"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Project Image"
+                class="w-full"
+              />
+              <div class="px-8 py-6">
+                <h3 class="font-semibold text-xl text-dark mt-5">
+                  <a
+                    href="#"
+                    class="inline mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                  >
+                    Tips Belajar Programming
+                  </a>
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis quis laborum iure tenetur iusto voluptate?
+                </p>
+                <a
+                  href="#"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary uppercase mb-2">
+              Kontak
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Hubungi Kami
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique, facilis.
+            </p>
+          </div>
+        </div>
+
+        <form>
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base text-primary font-bold"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base text-primary font-bold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base text-primary font-bold"
+                >Pesan</label
+              >
+              <textarea
+                type="message"
+                id="message"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+              ></textarea>
+            </div>
+            <div class="w-full">
+              <button
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">Liu Office</h2>
+            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <p>devinliu97@gmail.com</p>
+            <p>Jl. Sandang A1 No. 25</p>
+            <p>Palmerah, Jakarta Barat</p>
+          </div>
+
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">
+              Kategori Tulisan
+            </h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Programming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Teknologi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Gaya Hidup</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Klien</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700">
+          <p class="font-medium text-center text-xs text-slate-500">
+            Dibuat dengan <span class="text-pink-500">❤</span> oleh
+            <a
+              href="https://instagram.com/depinliu"
+              class="text-primary font-bold"
+              target="_blank"
+              >Devin Liu</a
+            >
+            menggunakan Tailwind CSS
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="../dist/script.js"></script>
+  </body>
+</html>
